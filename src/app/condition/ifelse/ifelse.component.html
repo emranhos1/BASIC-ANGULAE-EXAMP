@@ -1,0 +1,33 @@
+<h1>Component from ifelse!</h1>
+
+<!-- Boolean check -->
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <span>If Block</span>
+</ng-template>
+
+<ng-template #elseBlock>
+    <span>Else Block</span>
+</ng-template>
+<br>
+<button (click) = "getRevarse()">Check Condition</button>
+<br><br>
+
+<!-- String check -->
+<h1 *ngIf="isActive=='yes'; then ifBlock1 else elseBlock1"></h1>
+<ng-template #ifBlock1>
+    <span>If Block</span>
+</ng-template>
+
+<ng-template #elseBlock1>
+    <span>Else Block</span>
+</ng-template>
+<br><br>
+<!-- ngIf in ng-template -->
+
+<ng-template [ngIf] = "color=='red'">
+    <span style="background-color: red;">Red Block</span>
+</ng-template>
+<ng-template [ngIf] = "color=='green'">
+    <span style="background-color: green;">Green Block</span>
+</ng-template>

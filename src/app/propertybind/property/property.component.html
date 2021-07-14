@@ -1,0 +1,10 @@
+<h2>Component from property!</h2>
+
+<!-- Property binding -->
+<!-- it handle this -->
+<input type="text" [disabled]="disabled" [value]="name"/>
+<!-- interpolation -->
+<!-- it can't handle this -->
+<input type="text" disabled={{disabled}} value={{name}}/>
+<br>
+<button (click) = "enableBox()">Enable</button>

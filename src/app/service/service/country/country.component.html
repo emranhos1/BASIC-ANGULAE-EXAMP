@@ -1,0 +1,15 @@
+<h5>Component from country service!</h5>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Short Name</td>
+        <td>Capital</td>
+        <td>Region</td>
+    </tr>
+    <tr *ngFor ="let item of allData.slice(0, 5)">
+        <td>{{item.name}}</td>
+        <td>{{item.alpha2Code}}</td>
+        <td>{{item.capital}}</td>
+        <td>{{item.region}}</td>
+    </tr>
+</table>

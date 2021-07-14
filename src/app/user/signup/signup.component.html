@@ -1,0 +1,25 @@
+<h2>Component from signup!</h2>
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)" >
+    <input type="text" ngModel name="username" placeholder="Put User Name"/><br>
+    <input type="text" ngModel name="age" placeholder="Put Age"/><br>
+    <input type="text" ngModel name="phoneNo" placeholder="Put Phone No"/><br>
+    <input type="password" ngModel name="password" placeholder="Put Password"/><br>
+    <button>Submit</button>
+</form>
+
+<div>
+    <table>
+        <tr>
+            <td>User Name</td>
+            <td>Age</td>
+            <td>Phone No</td>
+            <td>Password</td>
+        </tr>
+        <tr>
+            <td>{{username}}</td>
+            <td>{{age}}</td>
+            <td>{{phoneNo}}</td>
+            <td>{{password}}</td>
+        </tr>
+    </table>
+</div>

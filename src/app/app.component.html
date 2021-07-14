@@ -1,0 +1,87 @@
+<div style="background-color: blueviolet; height: 350px; width: 25%; float: left;">
+    <p>Hello World</p>
+    <p>{{title}}</p>
+    <p>{{getName()}}</p>
+    <p>{{arr[0]}}</p>
+    <p>{{obj.name}}</p>
+    <p>{{obj.age}}</p>
+    <p>{{siteUrl}}</p>
+    <p>{{10/2}}</p>
+</div>
+
+<div style="background-color: burlywood; height: 350px; width: 25%; float: left;">
+    <app-user-list></app-user-list>
+</div>
+
+<div style="background-color:rgb(51, 59, 59); height: 350px; width: 25%; float: left;">
+    <app-login></app-login>
+</div>
+
+<div style="background-color:rgb(167, 40, 40); height: 350px; width: 25%; float: left;">
+    <app-event></app-event>
+</div>
+
+<div style="background-color:rgb(156, 106, 106); height: 350px; width: 25%; float: left;">
+    <app-property></app-property>
+</div>
+
+<div style="background-color:rgb(79, 165, 143); height: 350px; width: 25%; float: left;">
+    <app-ifelse></app-ifelse>
+</div>
+
+<div style="background-color:rgb(176, 236, 126); height: 350px; width: 25%; float: left;">
+    <app-switchcase></app-switchcase>
+</div>
+
+<div style="background-color:rgb(125, 240, 30); height: 350px; width: 25%; float: left;">
+    <app-for></app-for>
+</div>
+
+<div style="background-color: rgb(175, 226, 226); height: 350px; width: 25%; float: left;">
+    <app-signup></app-signup>
+</div>
+
+<div style="background-color: rgb(241, 237, 199); height: 350px; width: 25%; float: left;">
+    <app-header></app-header>
+    <app-body></app-body>
+    <app-footer></app-footer>
+</div>
+
+<div style="background-color: rgb(236, 223, 101); height: 350px; width: 25%; float: left;">
+    <p><b>Pass data parent to child</b></p>
+    <app-parentchild [person]="name" [personData]="obj"></app-parentchild>
+    <br>
+    <p><b>Pass data Child to parent</b><br>Look console</p>
+    <app-childparent (parentMethod)= "parentFunction($event)"></app-childparent>
+    <div>
+        <p>age from child = {{age}}</p>
+    </div>
+</div>
+
+<div style="background-color: rgb(31, 182, 63); height: 350px; width: 25%; float: left;">
+    <h3>Component From person!</h3>
+    <div *ngFor="let data of usersData">
+        <app-person [data] = "data"></app-person>
+    </div>
+</div>
+
+<div style="background-color: rgb(182, 31, 69); height: 350px; width: 25%; float: left;">
+    <app-pipe></app-pipe>
+</div>
+
+<div style="background-color: rgb(31, 182, 175); height: 350px; width: 25%; float: left;">
+    <button routerLink ="employee">Employee</button>
+    <button routerLink ="admin">Admin</button>
+    <button routerLink ="login">Login</button>
+    <button routerLink ="signup">Signup</button>
+    <button routerLink ="about">About</button>
+    <router-outlet></router-outlet>
+</div>
+
+<div style="background-color: rgb(122, 82, 109); height: 350px; width: 25%; float: left;">
+    <app-emp></app-emp>
+</div>
+
+<div style="background-color: rgb(179, 167, 175); height: 350px; width: 25%; float: left;">
+    <app-country></app-country>
+</div>

@@ -1,0 +1,12 @@
+<h2>Component from switchcase!</h2>
+<div [ngSwitch]= "color">
+    <h2 style="background-color: red;" *ngSwitchCase="'red'">Red Block</h2>
+    <h2 style="background-color: green;" *ngSwitchCase="'green'">Green Block</h2>
+    <h2 style="background-color: blue;" *ngSwitchCase="'blue'">Blue Block</h2>
+    <h2 style="background-color: gray;" *ngSwitchDefault>Default Block</h2><br>
+    <button (click) = "redColor()">Red</button>
+    <button (click) = "greenColor()">Green</button>
+    <button (click) = "blueColor()">Blue</button>
+    <button (click) = "defaultColor()">Default</button>
+</div>
+

@@ -1,0 +1,21 @@
+<h2>Component from for Loop!</h2>
+<div>
+    <span *ngFor="let item of fruits">{{item}} </span>
+    <p *ngFor="let item of details">Name : {{item.name}} , age : {{item.age}} & code : {{item.code}}</p>
+</div>
+<div>
+    <table border="1" style="background-color: gray; border: indianred;">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Code</td>
+            <td>Email</td>
+        </tr>
+        <tr *ngFor="let item of details">
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.code}}</td>
+            <td>{{item.email}}</td>
+        </tr>
+    </table>
+</div>
